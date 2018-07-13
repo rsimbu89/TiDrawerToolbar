@@ -1,0 +1,17 @@
+<Alloy>
+	<Window>
+		<DrawerLayout platform="=android">
+			<LeftView backgroundColor = 'red'> </LeftView>
+			<CenterView backgroundColor = 'yellow' >
+						<Toolbar width= Ti.UI.FILL backgroundColor ='#fefefe' top=0>
+					 				 		<Items>
+					 								<Button left=0 width=70> Left </Button>
+					 							  <Label id="pageTitleLabel" width=200 color = '#000' textAlign='center'/>
+					 								<Button right=0 width=70>Right</Button>
+					 						</Items>
+					 	</Toolbar>
+			</CenterView>
+			<RightView backgroundColor = 'orange'></RightView>
+		</DrawerLayout>
+	</Window>
+</Alloy>
