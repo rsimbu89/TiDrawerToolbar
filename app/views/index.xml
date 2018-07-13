@@ -1,17 +1,28 @@
 <Alloy>
 	<Window>
-		<DrawerLayout platform="=android">
-			<LeftView backgroundColor = 'red'> </LeftView>
-			<CenterView backgroundColor = 'yellow' >
-						<Toolbar width= Ti.UI.FILL backgroundColor ='#fefefe' top=0>
+		<DrawerLayout id="drawer" LOCK_MODE_LOCKED_OPEN=1 platform="android">
+			<LeftView>
+					<View backgroundColor='red'>
+					</View>
+		</LeftView>
+			<CenterView >
+			 	<View backgroundColor='yellow'>
+
+						<Toolbar width=Ti.UI.FILL backgroundColor='#fefefe' top=0>
 					 				 		<Items>
-					 								<Button left=0 width=70> Left </Button>
-					 							  <Label id="pageTitleLabel" width=200 color = '#000' textAlign='center'/>
-					 								<Button right=0 width=70>Right</Button>
+					 								<Button id="left" left=0 width=70> Left </Button>
+					 							  <Label  id="pageTitleLabel" text="Hello" width=200 color='#000' textAlign='center'/>
+					 								<Button id="right" right=0 width=70>Right</Button>
 					 						</Items>
 					 	</Toolbar>
+						<Label id="centerLabel" text="Change Center View" color="#000" onClick="chageCenterView"/>
+
+						</View>
 			</CenterView>
-			<RightView backgroundColor = 'orange'></RightView>
+			<RightView >
+					<View backgroundColor='orange'>
+					</View>
+			 </RightView>
 		</DrawerLayout>
 	</Window>
 </Alloy>

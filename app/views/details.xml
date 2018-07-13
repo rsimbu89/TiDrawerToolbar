@@ -1,0 +1,12 @@
+<Alloy>
+	<View class="container" backgroundColor="cyan">
+		<Toolbar width=Ti.UI.FILL backgroundColor='#fefefe' top=0>
+							<Items>
+									<Button id="left" left=0 width=70> Left </Button>
+									<Label  id="pageTitleLabel" text="Second" width=200 color='#000' textAlign='center'/>
+									<Button id="right" right=0 width=70>Right</Button>
+							</Items>
+		</Toolbar>
+		<Label id="pageLabel" color="#000"></Label>
+	</View>
+</Alloy>
